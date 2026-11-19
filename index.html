@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chathumi Kaveesha — UI/UX & Product Design Intern</title>
+  
+  <!-- Typography (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">CK.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Case Studies</a></li>
+        <li><a href="#skills">Toolbox</a></li>
+        <li><a href="#experience">Education & Path</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire as Intern</a>
+      <a href="#" id="navDownloadCvBtn" class="nav-cv-btn" title="Download CV">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>CV</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (with Ambient Motion Video) -->
+    <section id="hero" class="hero-section video-ambient-section">
+      <!-- Ambient Motion Background Video Layer -->
+      <div class="section-video-bg-container" aria-hidden="true">
+        <video 
+          class="section-video-bg hero-ambient-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto">
+          <source src="assets/images/ambient-bg.mp4" type="video/mp4">
+        </video>
+        <div class="section-video-overlay hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content-grid section-inner-content">
+        <div class="hero-text-col reveal-item" data-scroll-speed="0.12">
+          <div class="hero-subtitle">Computer Science Undergraduate • UX/UI Design & Software Dev</div>
+          <h1 class="hero-title">Crafting intuitive <span class="italic-accent">experiences</span> with technical precision.</h1>
+          <p class="hero-lead">
+            Hi, I'm Chathumi Kaveesha! Computer Science undergraduate at NSBM Green University and Google UX Design Professional Certificate holder. I unite user research, human-computer interaction, and full-stack development to build research-informed, accessible, and intuitive digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#works" class="btn-primary">
+              Explore Projects
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <button id="downloadCvBtn" class="btn-glass-cv">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download CV</span>
+            </button>
+            <a href="#contact" class="btn-secondary">Let's talk</a>
+          </div>
+        </div>
+
+        <!-- Animated Stylized 3D Character Composition -->
+        <div class="hero-character-composition reveal-item" data-scroll-speed="-0.08">
+          <!-- Background Ambient Glow & Organic Shapes -->
+          <div class="deco-warm-glow" aria-hidden="true" data-scroll-speed="0.25"></div>
+          <div class="deco-orbit-ring" aria-hidden="true" data-scroll-speed="-0.15"></div>
+          
+          <!-- Animated Accent Sparks & Badges -->
+          <div class="deco-idea-burst" aria-hidden="true" data-scroll-speed="-0.22">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="deco-sparkle sparkle-1" aria-hidden="true" data-scroll-speed="0.28">✦</div>
+          <div class="deco-sparkle sparkle-2" aria-hidden="true" data-scroll-speed="-0.18">✦</div>
+          <div class="deco-sparkle sparkle-3" aria-hidden="true" data-scroll-speed="0.2">✧</div>
+          
+          <!-- Creative Floating Badges -->
+          <div class="deco-floating-tag tag-top-right" data-scroll-speed="-0.18">
+            <span class="tag-icon">✨</span>
+            <span>Google UX Certified</span>
+          </div>
+
+          <div class="deco-floating-tag tag-bottom-left" data-scroll-speed="0.14">
+            <span class="tag-icon">🎨</span>
+            <span>UX/UI & Full-Stack</span>
+          </div>
+
+          <!-- Seamless Borderless Video Character Stage (No Controllers, Muted, Autoplay, Looping) -->
+          <div class="character-portrait-stage" data-scroll-speed="-0.05">
+            <video 
+              class="character-stage-video" 
+              autoplay 
+              muted 
+              loop 
+              playsinline 
+              disablepictureinpicture 
+              disableremoteplayback
+              preload="auto">
+              <source src="assets/images/hero-character.mp4" type="video/mp4">
+            </video>
+            <div class="stage-vignette-fade"></div>
+          </div>
+
+          <!-- Interactive Live Availability Pill -->
+          <div class="character-status-pill" data-scroll-speed="0.08">
+            <span class="pulse-dot"></span>
+            <span>Seeking UX/UI Design Internship</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Philosophy (Warm Sand Theme) -->
+    <section id="about" class="light-theme">
+      <div class="container">
+        <div class="section-label reveal-item">Professional Summary & Focus</div>
+        <h2 class="statement-title reveal-item">
+          Bridging <span class="italic-accent">human-computer interaction</span> with full-stack software development to build seamless, accessible solutions.
+        </h2>
+
+        <div class="editorial-columns reveal-item">
+          <p>
+            I am a Computer Science undergraduate at NSBM Green University with hands-on academic and team project experience across UX/UI design, HCI, user-centered workflows, and full-stack software engineering. As a Google UX Design Professional Certificate holder, I apply structured user research, empathy mapping, wireframing, rapid prototyping, and usability heuristics to eliminate digital friction.
+          </p>
+          <p>
+            My portfolio spans an agricultural subsidy mobile platform (BIO Pohora), an AI-assisted recruitment and interview management ecosystem, and a role-based restaurant analytics platform. I am actively seeking a UX/UI Design Internship where I can contribute my analytical problem-solving, accessibility mindset (WCAG), and engineering foundations to real-world product experiences.
+          </p>
+        </div>
+
+        <!-- Core Principles Grid -->
+        <div class="principle-cards-grid">
+          <div class="principle-card reveal-item" data-scroll-speed="-0.06">
+            <div class="principle-number">01 / USER RESEARCH & EMPATHY</div>
+            <h3 class="principle-title">Research-Informed Design</h3>
+            <p class="principle-desc">Conducting user interviews, persona modeling, and user journey mapping to ground decisions in genuine human context.</p>
+          </div>
+          <div class="principle-card reveal-item" data-scroll-speed="0.04">
+            <div class="principle-number">02 / HUMAN-COMPUTER INTERACTION</div>
+            <h3 class="principle-title">Heuristics & Workflows</h3>
+            <p class="principle-desc">Structuring information architecture, accessibility (WCAG), and offline-capable mobile workflows with intuitive clarity.</p>
+          </div>
+          <div class="principle-card reveal-item" data-scroll-speed="-0.08">
+            <div class="principle-number">03 / TECHNICAL BRIDGING</div>
+            <h3 class="principle-title">Full-Stack Empathy</h3>
+            <p class="principle-desc">Leveraging understanding of React, Spring Boot, C#, and Flutter to ensure seamless developer handoff and technical feasibility.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Works (Dark Theme with Ambient Motion Video) -->
+    <section id="works" class="works-section video-ambient-section">
+      <!-- Ambient Motion Background Video Layer -->
+      <div class="section-video-bg-container" aria-hidden="true">
+        <video 
+          class="section-video-bg" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto">
+          <source src="assets/images/ambient-bg.mp4" type="video/mp4">
+        </video>
+        <div class="section-video-overlay"></div>
+      </div>
+
+      <div class="container section-inner-content">
+        <div class="section-header-flex reveal-item">
+          <div>
+            <div class="section-label dark-theme">Selected Portfolio</div>
+            <h2 class="section-header-title">Ideas, shaped into <span class="italic-accent">experiences.</span></h2>
+          </div>
+          <div class="section-header-meta">
+            A curated selection of recent products, design systems, and software platforms.
+          </div>
+        </div>
+
+        <!-- Interactive Works Table -->
+        <div class="projects-table">
+          <!-- Project 1: BIO Pohora -->
+          <div class="project-row reveal-item" data-project="bio-pohora" data-scroll-speed="-0.04" role="button" tabindex="0">
+            <div class="project-thumbnail thumb-b2b"></div>
+            <div class="project-info">
+              <div class="project-title">BIO Pohora – Fertilizer Subsidy Platform</div>
+              <div class="project-category">Human-Computer Interaction (HCI) • Mobile UX</div>
+            </div>
+            <div class="project-meta-tags">
+              <span class="meta-pill">HCI & UX</span>
+              <span class="meta-pill">QR Verification</span>
+              <span class="meta-pill">Biometric Login</span>
+              <span class="meta-pill">Offline Workflows</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Recruitment Platform -->
+          <div class="project-row reveal-item" data-project="recruitment-platform" data-scroll-speed="0.05" role="button" tabindex="0">
+            <div class="project-thumbnail thumb-recruitment"></div>
+            <div class="project-info">
+              <div class="project-title">Recruitment Platform – AI Hiring & Interview Management</div>
+              <div class="project-category">Full-Stack Web App • ASP.NET Core 8 & OpenAI</div>
+            </div>
+            <div class="project-meta-tags">
+              <span class="meta-pill">AI Scoring</span>
+              <span class="meta-pill">Role-Based UX</span>
+              <span class="meta-pill">ASP.NET Core</span>
+              <span class="meta-pill">SQL Server</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Project 3: Restaurant Management System -->
+          <div class="project-row reveal-item" data-project="restaurant-os" data-scroll-speed="-0.05" role="button" tabindex="0">
+            <div class="project-thumbnail thumb-restaurant"></div>
+            <div class="project-info">
+              <div class="project-title">Restaurant Management System – Orders & Analytics</div>
+              <div class="project-category">Full-Stack Enterprise • React & Spring Boot REST API</div>
+            </div>
+            <div class="project-meta-tags">
+              <span class="meta-pill">React & Vite</span>
+              <span class="meta-pill">Spring Boot</span>
+              <span class="meta-pill">JWT Auth</span>
+              <span class="meta-pill">Docker & MySQL</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Project 4: AgroVision -->
+          <div class="project-row reveal-item" data-project="agro-vision" data-scroll-speed="0.06" role="button" tabindex="0">
+            <div class="project-thumbnail thumb-agro"></div>
+            <div class="project-info">
+              <div class="project-title">AgroVision – Cross-Platform Mobile Application</div>
+              <div class="project-category">Cross-Platform Development • Flutter & Dart</div>
+            </div>
+            <div class="project-meta-tags">
+              <span class="meta-pill">Flutter</span>
+              <span class="meta-pill">Dart</span>
+              <span class="meta-pill">iOS & Android</span>
+              <span class="meta-pill">Git / GitHub</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tooling (Warm Sand Theme) -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-label reveal-item">Technical & Design Capabilities</div>
+        <h2 class="statement-title reveal-item">From user research to <span class="italic-accent">production code.</span></h2>
+
+        <div class="skills-grid">
+          <!-- Column 1: UX/UI & HCI -->
+          <div class="skill-card reveal-item" data-scroll-speed="-0.07">
+            <h3 class="skill-category-title">UX/UI & HCI</h3>
+            <div class="skill-tags-cloud">
+              <span class="skill-badge">User Research</span>
+              <span class="skill-badge">User Interviews</span>
+              <span class="skill-badge">Personas</span>
+              <span class="skill-badge">Journey Mapping</span>
+              <span class="skill-badge">Information Architecture</span>
+              <span class="skill-badge">Wireframing</span>
+              <span class="skill-badge">Interactive Prototyping</span>
+              <span class="skill-badge">Usability Testing</span>
+              <span class="skill-badge">Accessibility (WCAG)</span>
+              <span class="skill-badge">Mobile-First & Responsive</span>
+              <span class="skill-badge">Usability Heuristics</span>
+            </div>
+          </div>
+
+          <!-- Column 2: Design Tools & Full-Stack -->
+          <div class="skill-card reveal-item" data-scroll-speed="0.05">
+            <h3 class="skill-category-title">Languages & Frameworks</h3>
+            <div class="skill-tags-cloud">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Flutter & Dart</span>
+              <span class="skill-badge">ASP.NET Core</span>
+              <span class="skill-badge">Spring Boot</span>
+              <span class="skill-badge">Java</span>
+              <span class="skill-badge">C#</span>
+              <span class="skill-badge">JavaScript (ES6)</span>
+              <span class="skill-badge">HTML5 & CSS3</span>
+              <span class="skill-badge">SQL (MySQL & MSSQL)</span>
+              <span class="skill-badge">REST API Development</span>
+            </div>
+          </div>
+
+          <!-- Column 3: Tools, Quality & Cloud -->
+          <div class="skill-card reveal-item" data-scroll-speed="-0.09">
+            <h3 class="skill-category-title">Tools, QA & Security</h3>
+            <div class="skill-tags-cloud">
+              <span class="skill-badge">Figma</span>
+              <span class="skill-badge">Adobe XD</span>
+              <span class="skill-badge">Design Systems</span>
+              <span class="skill-badge">Git & GitHub</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Maven</span>
+              <span class="skill-badge">Software Testing (STLC)</span>
+              <span class="skill-badge">Role-Based Access (JWT)</span>
+              <span class="skill-badge">Cloud Data Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience, Education & Certifications Timeline (Dark Theme with Ambient Motion Video) -->
+    <section id="experience" class="experience-section video-ambient-section">
+      <!-- Ambient Motion Background Video Layer -->
+      <div class="section-video-bg-container" aria-hidden="true">
+        <video 
+          class="section-video-bg" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto">
+          <source src="assets/images/ambient-bg.mp4" type="video/mp4">
+        </video>
+        <div class="section-video-overlay"></div>
+      </div>
+
+      <div class="container section-inner-content">
+        <div class="experience-grid">
+          <div class="reveal-item">
+            <div class="section-label dark-theme">Education, Certifications & Research</div>
+            <h2 class="section-header-title">Academic path & <span class="italic-accent">credentials.</span></h2>
+            <p style="color: var(--text-white-muted); font-size: 0.95rem; margin-top: 1.25rem; max-width: 380px;">
+              Combining computer science foundations at NSBM Green University with global professional certifications in UX design, full-stack engineering, and cloud security research.
+            </p>
+          </div>
+
+          <div class="experience-list reveal-item" data-scroll-speed="-0.04">
+            <!-- Education -->
+            <div class="experience-item" data-scroll-speed="-0.03">
+              <div class="exp-year">2024 — Present<br><span style="font-size: 0.72rem; color: var(--text-white-faint);">Undergraduate</span></div>
+              <div>
+                <div class="exp-role-title">BSc (Hons) Computer Science (UGC Approved)</div>
+                <div class="exp-company">NSBM Green University, Sri Lanka</div>
+              </div>
+              <div class="exp-location" style="color: var(--accent-lime); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Education</div>
+            </div>
+
+            <div class="experience-item" data-scroll-speed="0.02">
+              <div class="exp-year">2023 / 2018<br><span style="font-size: 0.72rem; color: var(--text-white-faint);">Secondary</span></div>
+              <div>
+                <div class="exp-role-title">G.C.E. Advanced Level (2023) & Ordinary Level (2018)</div>
+                <div class="exp-company">National Examinations, Sri Lanka</div>
+              </div>
+              <div class="exp-location" style="color: var(--text-white-faint); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Education</div>
+            </div>
+
+            
+
+            
+
+            
+            <!-- Research Experience -->
+            <div class="experience-item" data-scroll-speed="-0.02">
+              <div class="exp-year">Research Review<br><span style="font-size: 0.72rem; color: var(--text-white-faint);">Academic</span></div>
+              <div>
+                <div class="exp-role-title">Cryptography for Cloud Data Security: A Systematic Review</div>
+                <div class="exp-company">Systematic review of techniques, limitations, and research gaps in cloud data security</div>
+              </div>
+              <div class="exp-location" style="color: #64b5f6; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Research</div>
+            </div>
+
+            <!-- Activities -->
+            <div class="experience-item" data-scroll-speed="0.03">
+              <div class="exp-year">Hackathons & FOSS<br><span style="font-size: 0.72rem; color: var(--text-white-faint);">Co-Curricular</span></div>
+              <div>
+                <div class="exp-role-title">PayPal AI Hackathon & Safira 2026 Participant</div>
+                <div class="exp-company">Participant at PayPal AI Hackathon • Safira 2026: Celebrating Women in Technology, Women in FOSS Community (NSBM Green University)</div>
+              </div>
+              <div class="exp-location" style="color: #ba68c8; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase;">Activities</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA & Footer (with Ambient Motion Video) -->
+    <section id="contact" class="closing-section video-ambient-section">
+      <!-- Ambient Motion Background Video Layer -->
+      <div class="section-video-bg-container" aria-hidden="true">
+        <video 
+          class="section-video-bg" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto">
+          <source src="assets/images/ambient-bg.mp4" type="video/mp4">
+        </video>
+        <div class="section-video-overlay cta-overlay"></div>
+      </div>
+
+      <div class="closing-glow" aria-hidden="true"></div>
+      <div class="container section-inner-content">
+        <div class="closing-label reveal-item">Looking for an enthusiastic UX/UI Design Intern?</div>
+        <h2 class="closing-title reveal-item">Let's create something <span class="italic-accent">meaningful.</span></h2>
+        
+        <div class="reveal-item">
+          <a href="mailto:chathumijayawardhana@gmail.com" class="btn-primary">
+            Connect via Email
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+
+        <footer class="footer-nav">
+          <div class="brand-logo">CK.</div>
+          <ul class="footer-links">
+            <li><a href="https://linkedin.com/in/chathumi-jayawardhana-850392348" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/ChathumiKaveesha" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="tel:+94705089776">+94 70 508 9776</a></li>
+          </ul>
+          <div>© 2026 Chathumi Kaveesha. NSBM Green University.</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Slide-over Modal -->
+  <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-drawer">
+      <button id="closeModalBtn" class="modal-close-btn" aria-label="Close modal">✕</button>
+      
+      <div id="modalBadge" class="modal-badge">Category</div>
+      <h3 id="modalTitle" class="modal-title">Project Title</h3>
+      <p id="modalTagline" class="modal-tagline">Brief project summary</p>
+
+      <div class="modal-meta-grid">
+        <div class="modal-meta-item">
+          <label>Client</label>
+          <span id="modalClient">—</span>
+        </div>
+        <div class="modal-meta-item">
+          <label>Role</label>
+          <span id="modalRole">—</span>
+        </div>
+        <div class="modal-meta-item">
+          <label>Timeline</label>
+          <span id="modalTimeline">—</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <h4>The Challenge</h4>
+        <p id="modalProblem">—</p>
+
+        <h4>The Solution</h4>
+        <p id="modalSolution">—</p>
+
+        <h4>Impact & Results</h4>
+        <div id="modalStats" class="modal-stats"></div>
+
+        <h4>Disciplines & Stack</h4>
+        <div id="modalTech" class="project-meta-tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
